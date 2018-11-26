@@ -1,0 +1,133 @@
+html{
+	background-color:#FA8072;
+	background-image:url('fon.jpg') ;
+	background-size:100%;
+}
+header{
+	margin-top:10px;
+	font-family: Arial;
+}
+.TableMenu {
+	max-width: 150px;
+	padding:5px;
+}
+.MyMenu *{
+	margin: 0;
+	padding:0;
+}
+.MyMenu ul,
+.MyMenu ol{
+	list-style: none;
+}
+.MyMenu > ul{
+	display: flax;
+}
+.MyMenu > ul li a{
+	display: block;
+	background:#910832;
+	max-width: 100px;
+	font-size: 15px;
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.MyMenu > ul li{
+	position: relative;
+	z-index:1;
+}
+
+.MyMenu li a: hover{
+	background:black;
+	color: black;
+}
+.MyMenu li ul{
+	position: absolute;
+	min-width: 100px;
+	max-height: 10px;
+	font-size: 12px;
+	display: none;
+}
+.MyMenu li > ul li{
+	border: 1px solid black;
+}
+.MyMenu li > ul li a{
+	padding: 10px;
+	text-transform: none;
+	background: #B7767C;
+}
+.MyMenu li > ul li ul{
+	position:absolute;
+	z-index:2;
+	right:-120px;
+	top:0;
+}
+.MyMenu li:hover > ul{
+	display: block;
+}
+
+.MyMenu ul > li > a:hover {
+    background-color: black;
+}
+div{
+	width:1600px;
+	height:1000px;
+	max-width:95%;
+}
+article {
+	margin-top:20px;
+	margin-left:20px;
+	width:70%;
+	z-index:-2;
+	text-align:center;
+}
+section {
+	width:50%;
+	float:left;
+	position: relative;
+}
+
+img {
+	max-width:100%;
+}
+
+audio{
+	max-width:100%;
+}
+aside{
+	display:block;
+	width: 25%;
+	float:right;
+	position: relative;
+}
+
+
+
+footer{
+	background:#910832;
+	display:inline-block;
+	min-width:95%;
+	margin:20px;
+	margin-left:0px;
+	margin-right:0 px;
+	position: relative;
+	font-size:1.2em;
+	font-family:Comic Sans Ms;
+	text-align:right;
+	
+}
+@media print {
+	img {
+		display: none;
+	}
+	
+	.myMenu {
+		display: none;
+	}
+	
+	audio {
+		display: none;
+	}
+	footer{
+		display: none;
+	}
+}
