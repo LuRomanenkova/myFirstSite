@@ -1,0 +1,290 @@
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Бутстрапик</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/MyStyle.css" rel="stylesheet">
+
+   
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   
+  </head>
+  <body>
+	<!-- Классы navbar и navbar-default (базовые классы меню) -->
+	<nav class="navbar navbar-inverse navbar-static-top">
+	  <!-- Контейнер (определяет ширину Navbar) -->
+	  <div class="container-fluid">
+		<!-- Заголовок -->
+		<div class="navbar-header">
+		  <!-- Кнопка «Гамбургер» отображается только в мобильном виде (предназначена для открытия основного содержимого Navbar) -->
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <!-- Бренд или название сайта (отображается в левой части меню) -->
+		  <a class="navbar-brand" href="file:///C:/Users/днс/Desktop/Bootstrap_3/MyFirstBootstrap.html#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Иди ко мне</a>
+		</div>
+		<!-- Основная часть меню (может содержать ссылки, формы и другие элементы) -->
+		 <div class="collapse navbar-collapse" id="navbar-main">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Менюшечка <span class="caret"></span></a>
+					  <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+						<li><a href="file:///C:/Users/днс/Desktop/Bootstrap_3/cat.html">Кисонька</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="file:///C:/Users/днс/Desktop/Bootstrap_3/math.html">Математика</a></li>
+						<li role="separator" class="divider"></li>
+						<li  class="dropdown-submenu">
+							<a tabindex="-1" href="#">Привет!</a>
+								<ul class="dropdown-menu">
+									<li>
+									  <a tabindex="-1" href="#"><small>JS</small></a>
+									</li>
+									<li>
+									  <a href="#"><small> В следующий раз</small></a>
+									</li>
+								</ul>
+						</li>	
+					  </ul>
+				</li>
+			</ul>
+			
+		</div>
+	  </div>
+	</nav>
+	
+	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb">
+			  <li class="active"><a href="file:///C:/Users/днс/Desktop/Bootstrap_3/MyFirstBootstrap.html#">Home</a></li>
+			</ol>
+		</div>
+		<div class="page-header">
+		  <h1>Моих рук дело <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> <small>вообще-то я старалась </small></h1>
+		</div>
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#panel1">Карусель</a></li>
+			<li><a data-toggle="tab" href="#panel2">Таблички</a></li>
+			<li><a data-toggle="tab" href="#panel3">Модальное окошечко</a></li>
+			<li><a data-toggle="tab" href="#panel4">Сворачивание</a></li>
+		</ul> 
+		<div class="tab-content">
+		  <div id="panel1" class="tab-pane fade in active">
+			<br>
+			<div id="testCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Индикаторы карусели -->
+				<ol class="carousel-indicators">
+					<li data-target="#testCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#testCarousel" data-slide-to="1"></li>
+					<li data-target="#testCarousel" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Слайды карусели -->
+				<div class="carousel-inner">
+					<div class="item">
+						<img class="img-responsive center-block"  src="sing.jpg" alt="...">
+					</div>
+					<!-- Слайд 2 -->
+					<div class="item">
+						<img  class="img-responsive center-block"  src="dance.jpg" alt="...">
+					</div>
+					<!-- Слайд 3 -->
+					<div class="item active">
+						<img class="img-responsive center-block"  src="life.jpg" alt="...">
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+			</div>
+		  
+		  <div id="panel2" class="tab-pane fade">
+			<h3><span class="glyphicon glyphicon-music" aria-hidden="true"></span>MUSIC</h3>
+			<div class="table-responsive">
+				<table class="table">
+					<thead>
+						<tr>
+						<th>Исполнитель</th>
+						<th>Песня</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>5 Second of Summer</td>
+							<td><a href="https://vk.com/audios225690308">YoungBlood</a></td>
+						</tr>
+						<tr>
+							<td>Shannon Jae Prior ft. Jesse Scot</td>
+							<td><a href="https://vk.com/audios225690308">The Usual</a></td>
+						</tr>
+						<tr>
+							<td>Озера</td>
+							<td><a href="https://vk.com/audios225690308">Город</a></td>
+						</tr>
+						<tr>
+							<td>Тима Белорусских</td>
+							<td><a href="https://vk.com/audios225690308">Незабудка</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<h3><span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span>Мысли о погоде</h3>
+			<div class="table-responsive">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>Время года</th>
+							<th>Дождь</th>
+							<th><span  data-toggle="tooltip" data-placement="left" title="Магические пылинкииии!">Снег</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr >
+							<td><span class="label label-primary" data-toggle="tooltip" data-placement="left" title="Бррр..Холодно!">Зима</span></td>
+							<td>нет</td>
+							<td>есть</td>
+						</tr>
+						<tr>
+							<td> <span class="label label-success" data-toggle="tooltip" data-placement="left" title="Травка зеленеет.. Солнышко блестит">Весна</span></td>
+							<td>есть</td>
+							<td>есть</td>
+						</tr>
+						<tr>
+							<td><span class="label label-warning" data-toggle="tooltip" data-placement="left" title="Здесь море и песооок!">Лето</span></td>
+							<td>есть</td>
+							<td>нет</td>
+						</tr>
+						<tr>
+							<td> <span class="label label-danger" data-toggle="tooltip" data-placement="left" title="Скоро зима...бррр!">Осень</span></td>
+							<td>есть</td>
+							<td>есть</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		  </div>
+		  <div id="panel3" class="tab-pane fade">
+			<br>
+			<div class="panel panel-danger">
+			  <!-- Обычное содержимое панели -->
+			  <div class="panel-heading">Я в социальных сетях</div>
+			  <table class="table table-bordered">
+					<thead class="textcl">
+						<tr>
+							<th>Соц.сеть</th>
+							<th>Аккаунт</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="textcl">
+							<td>Instagram</td>
+							<td><a href="https://www.instagram.com/ludmila_romanenkova/?hl=ru">My Instagram</td>
+						</tr>
+						<tr class="textcl">
+							<td>Vk</td>
+							<td><a href="https://vk.com/ludmila20132000">My VK Page</a></td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+				<br>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+				  Нажми на меня :)
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle" class="MyPanel"></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+						<p class="MyPanel">я знала, что ты нажмешь :)</p>
+					  </div>
+					  <div class="modal-body">
+						<p class="MyPanel"> Надеюсь, тебе понравилось)<br>
+											Хорошего дня!
+						</p>
+						
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Ну такооооое(</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Мне нравится)</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</div>
+		  <div id="panel4" class="tab-pane fade">
+			<br>
+			<div class="panel-group" id="accordion">
+			  <div class="panel panel-danger">
+				<!-- Заголовок 1 панели -->
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Давай закомиться :)</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse">
+				  <!-- Содержимое 1 панели -->
+				  <div class="panel-body">
+					<p class="MyPanel"> Меня зовут Люда) и это первая моя страничка, написанная на Bootstrap3 </p>
+				  </div>
+				</div>
+			  </div>
+			  <!-- 2 панель -->
+			  <div class="panel panel-danger">
+				<!-- Заголовок 2 панели -->
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Немного обо мне </a>
+				  </h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<p class="MyPanel">Ничего не расскажу:)<br>
+					
+					</p>
+				  </div>
+				</div>
+			  </div>
+			  
+			  </div>
+			
+					
+			</div>
+		</div>
+
+	
+	
+	
+	
+	
+	
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="js/bootstrap.js"></script>-->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>﻿
+ 
+
+  </body>
+</html>
